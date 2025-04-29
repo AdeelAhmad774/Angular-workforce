@@ -1,0 +1,109 @@
+
+
+  @media screen and (max-width: 992px) {
+  
+  .navbar1{
+    margin-left: 15px;
+  }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    .third-section h4 {
+     font-size: 21px;
+  
+   
+     
+    }
+    .third-section .btn-third{
+        width: 150px;
+    padding-bottom: 5px;
+    }
+   
+  }
+  @media screen and (max-width: 768px)  {
+    .second-section{
+        width:80%;
+        margin: 0 auto;
+       
+    }
+    .third-section{
+        box-sizing: border-box;
+        width:80%;
+        margin: 0 auto;
+       margin-bottom: 20px;
+       padding: 50px;
+    
+    }
+    .third-section .btn-third{
+        width: 150px;
+    padding-bottom: 5px;
+    }
+   
+  }
+ 
+  @media screen and (max-width: 465px) {
+    .container-fluid {
+      flex-wrap: wrap !important; /* allow wrap so nav can go below */
+    }
+  
+    .navbar-collapse {
+      flex-direction: column !important; /* vertical stack */
+      align-items: flex-start !important; /* align to left */
+      width: 100%;
+    }
+  
+    .navbar-nav {
+      flex-direction: column !important; /* stack nav items */
+      width: 100%;
+    }
+  
+    .demo-buttons {
+      background-color: blue;
+    }
+  
+    
+  }
+  @media screen and (max-width: 992px) {
+
+    
+  }
+  .third-section{
+    border: 1px solid rgb(220, 226, 235);
+    border-radius: 10px;
+    padding: 50px;
+  } 
+  .third-section:hover{
+    background-color: rgb(10, 10, 209);
+    color: white;
+    
+  }
+  .third-section h4 {
+
+    font-weight: bold;
+    color: rgb(99, 18, 175);
+    text-align: center;
+    
+  }
+  
+  .third-section:hover h4 {
+    color: white;
+    
+  }
+  .btn-third {
+   padding-left: 10px;
+   padding-right: 10px;
+    padding-bottom: 5px;
+    height: 60px;
+    border-radius: 50px;
+    background-color: white;
+    border: 1px solid rgb(99, 18, 175);
+    font-size: 18px;
+    color: rgb(99, 18, 175);
+    font-weight: 600;
+  }
+  .third-section:hover .btn-third {
+    background-color: rgb(10, 10, 209); /* Button color changes on hover of the parent div */
+    color: white; /* Button text color also changes */
+    border: 1px solid white;
+  }
+  

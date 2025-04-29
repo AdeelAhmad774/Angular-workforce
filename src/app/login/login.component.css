@@ -1,0 +1,17 @@
+.row1{
+    --bs-gutter-x:0;
+  --bs-gutter-y: 0;
+}
+.btn-login{
+    margin: 50px;
+    width: 120px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid rgb(248, 248, 248);
+    background-color: rgb(109, 32, 182);
+    color: white;
+    font-size: 22px;
+}
+.btn-login:hover{
+    background-color: blueviolet;
+}
