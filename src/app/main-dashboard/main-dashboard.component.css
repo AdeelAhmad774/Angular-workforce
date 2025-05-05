@@ -2,7 +2,12 @@
     --bs-gutter-x: opx;
   --bs-gutter-y: 0;
 }
-
- 
-
+.fixed-icon {
+  width: 40px;
+  height: 32px;
+  min-width: 40px;
+  min-height: 32px;
+  max-width: 32px;
+  max-height: 40px;
   
+}
