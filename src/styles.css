@@ -10,4 +10,30 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     padding: 0px !important;
     width: 100px;
   }
+  .toast-top-left {
+    top: 0;
+    left: 0;
+  }
   
+  .toast-top-center {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .toast-top-right {
+    top: 10%;
+    right: 1%;
+  }
+
+  .success-toast {
+    background-color: green; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    padding: 20px;
+    width: 400px;
+    border-radius: 5px;
+    color: #ffffff;  
+  }

@@ -12,13 +12,22 @@ import { MainDashboardComponent } from './main-dashboard/main-dashboard.componen
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { ToastrModule } from 'ngx-toastr';
+import { NgCircleProgressModule } from 'ng-circle-progress';
+import { EmployeeManagementComponent } from './employee-management/employee-management.component';
+import { SharedToken } from './Shared/Service/shared-token';
+import { HomepageComponent } from './homepage/homepage.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
     LoginComponent,
-    MainDashboardComponent
+    MainDashboardComponent,
+    EmployeeManagementComponent,
+    HomepageComponent
   ],
   imports: [
     BrowserModule,
@@ -29,10 +38,21 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MatIconModule,
 MatMenuModule,
 MatFormFieldModule,
-   
-    
+MatTableModule,
+MatPaginatorModule,
+ToastrModule.forRoot({
+  positionClass: 'toast-top-right',
+}),
+NgCircleProgressModule.forRoot({
+  radius: 100,
+  outerStrokeWidth: 16,
+  innerStrokeWidth: 8,
+  outerStrokeColor: "#78C000",
+  innerStrokeColor: "#C7E596",
+  animationDuration: 300,
+}),  
   ],
-  providers: [],
+  providers: [SharedToken],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
