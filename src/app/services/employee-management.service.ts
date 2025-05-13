@@ -14,7 +14,7 @@ export class EmployeeManagementService {
 
 
     });
-    return this.http.post('http://192.168.100.96:7182/api/Employee/EmployeeList ',{},
+    return this.http.post<any[]>('http://192.168.100.96:7182/api/Employee/EmployeeList ',{},
       {headers});
   }
 }

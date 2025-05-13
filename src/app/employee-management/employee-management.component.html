@@ -73,37 +73,31 @@
     <div class="mat-elevation-z8">
       <table mat-table [dataSource]="dataSource">
         <!-- Position Column -->
-        <ng-container matColumnDef="position">
-          <th mat-header-cell *matHeaderCellDef>Employee Name</th>
-          <td mat-cell *matCellDef="let element">{{ element.position }}</td>
-        </ng-container>
-
-        <!-- Name Column -->
         <ng-container matColumnDef="name">
-          <th mat-header-cell *matHeaderCellDef>Site Name</th>
+          <th mat-header-cell *matHeaderCellDef>Employee Name</th>
           <td mat-cell *matCellDef="let element">{{ element.name }}</td>
         </ng-container>
 
-        <!-- Weight Column -->
-        <ng-container matColumnDef="weight">
+        <!-- Name Column -->
+        <ng-container matColumnDef="email">
           <th mat-header-cell *matHeaderCellDef>Email</th>
-          <td mat-cell *matCellDef="let element">{{ element.weight }}</td>
+          <td mat-cell *matCellDef="let element">{{ element.email }}</td>
+        </ng-container>
+
+        <!-- Weight Column -->
+        <ng-container matColumnDef="passportNationality">
+          <th mat-header-cell *matHeaderCellDef>Passport</th>
+          <td mat-cell *matCellDef="let element">
+            {{ element.passportNationality }}
+          </td>
         </ng-container>
 
         <!-- Symbol Column -->
-        <ng-container matColumnDef="symbol">
-          <th mat-header-cell *matHeaderCellDef>Passport</th>
-          <td mat-cell *matCellDef="let element">{{ element.symbol }}</td>
-        </ng-container>
-
-        <ng-container matColumnDef="symbol1">
+        <ng-container matColumnDef="visaIssueDate">
           <th mat-header-cell *matHeaderCellDef>Visa</th>
-          <td mat-cell *matCellDef="let element">{{ element.symbol1 }}</td>
-        </ng-container>
-
-        <ng-container matColumnDef="symbol2">
-          <th mat-header-cell *matHeaderCellDef>Date of Joining</th>
-          <td mat-cell *matCellDef="let element">{{ element.symbol2 }}</td>
+          <td mat-cell *matCellDef="let element">
+            {{ element.visaIssueDate }}
+          </td>
         </ng-container>
 
         <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
